@@ -1,0 +1,193 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-22 08:17+0200\n"
+"PO-Revision-Date: 2017-09-22 08:22+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_CO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+
+#: .\\.py
+msgid "name"
+msgstr "nombre"
+
+#: .\\.py
+msgid "last update date"
+msgstr "fecha última modificación"
+
+#: .\\.py
+msgid "store"
+msgstr "tienda"
+
+#: .\\.py
+msgid "stores"
+msgstr "tiendas"
+
+#: .\\.py
+msgid "product"
+msgstr "producto"
+
+#: .\\.py
+msgid "products"
+msgstr "productos"
+
+#: .\\.py
+msgid "unity"
+msgstr "unidad"
+
+#: .\\.py
+msgid "package"
+msgstr "paquete/bolsa"
+
+#: .\\.py
+msgid "gram"
+msgstr "gramo"
+
+#: .\\.py
+msgid "available"
+msgstr "disponibles"
+
+#: .\\.py
+msgid "availability cannot be less than zero"
+msgstr "la disponibilidad no puede ser menor a cero"
+
+#: .\\.py
+msgid "bill number"
+msgstr "número de factura"
+
+#: .\\.py
+msgid "bill date"
+msgstr "fecha de factura"
+
+#: .\\.py
+msgid "sale"
+msgstr "venta"
+
+#: .\\.py
+msgid "sales"
+msgstr "ventas"
+
+#: .\\.py
+msgid "quantity"
+msgstr "cantidad"
+
+#: .\\.py
+msgid "price"
+msgstr "precio"
+
+#: .\\.py
+msgid "value"
+msgstr "valor"
+
+#: .\\.py
+msgid "price cannot be less than or equals zero"
+msgstr "el precio no puede ser menor o igual a cero"
+
+#: .\\.py
+msgid "This field is required"
+msgstr "Este campo es requerido"
+
+#: .\\.py
+msgid "sale detail"
+msgstr "detalle venta"
+
+#: .\\.py
+msgid "sale details"
+msgstr "detalles venta"
+
+#: .\\.py
+msgid "basic data"
+msgstr "información basica"
+
+#: .\\.py
+msgid "commercial information"
+msgstr "información comercial"
+
+#: .\\.py
+msgid "sale information"
+msgstr "información de la venta"
+
+#: .\\.py
+msgid "detail"
+msgstr "detalle"
+
+#: .\\.py
+msgid "inventory"
+msgstr "inventario"
+
+#: .\\.py
+msgid "This list is required"
+msgstr "Esta lista es requerida"
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+#: .\\.py
+msgid ""
+msgstr ""
+
+
+
