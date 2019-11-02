@@ -8,6 +8,9 @@ from django_filters.rest_framework import DjangoFilterBackend
 from .models import Store, Product, Inventory, Sale, SaleDetail
 from .serializers import StoreSerializer, ProductSerializer, InventorySerializer, SaleSerializer, SaleDetailSerializer
 
+import logging
+logger = logging.getLogger(__name__)
+
 
 class StoreViewSet(ModelViewSet):
     """
@@ -107,12 +110,48 @@ class SaleViewSet(ModelViewSet):
     queryset = Sale.objects.all()
     serializer_class = SaleSerializer
     permission_classes = [DjangoModelPermissions]
-    filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['number', 'date']
+    # filter_backends = [DjangoFilterBackend]
+    # filterset_fields = ['number', 'date']
 
     def create(self, request):
-        serial = SaleSerializer(data=request.data)
-        serial.is_valid(raise_exception=True)
+        """
+        POST Example
+        {
+            "number": "1",
+            "store": "1",
+            "details": [
+                {
+                    "product_id": 1,
+                    "quantity": 1
+                },
+                {
+                    "product_id": 2,
+                    "quantity": 3
+                }
+            ]
+        }
+        ---
+         parameters:
+        - number: body
+          description: number of bull
+          required: true
+          paramType: body
+        - store: body
+          description: store id
+          required: true
+          paramType: body
+        - details: details
+          description: sale details
+          required: true
+          paramType: body
+          pytype: SaleDetailSerializer
+        ---
+        """
+        sale_serializer = SaleSerializer(data=request.data)
+        sale_serializer.is_valid(raise_exception=True)
+        # logger.info(f"serializer {serial}")
+        sale = sale_serializer.create(sale_serializer.validated_data)
+        return Response(sale, status=status.HTTP_201_CREATED)
 
     def partial_update(self, request, pk=None):
         return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
@@ -137,5 +176,5 @@ class SaleDetailViewSet(ReadOnlyModelViewSet):
     queryset = SaleDetail.objects.all()
     serializer_class = SaleDetailSerializer
     permission_classes = [DjangoModelPermissions]
-    filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['sale_id', 'sale__number', 'product__id']
+    # filter_backends = [DjangoFilterBackend]
+    # filterset_fields = ['sale']

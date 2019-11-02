@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+from django.shortcuts import get_object_or_404
 
 
 class Store(models.Model):
@@ -101,6 +102,7 @@ class Inventory(models.Model):
         verbose_name_plural = _('inventory')
         db_table = "inventory_inventory"
         ordering = ['store', 'product']
+        unique_together = (('store', 'product'),)
         indexes = [
             models.Index(fields=['store']),
             models.Index(fields=['product']),
@@ -116,7 +118,8 @@ class Sale(models.Model):
     store = models.ForeignKey(
         Store,
         on_delete=models.PROTECT,
-        verbose_name=_('store')
+        verbose_name=_('store'),
+        blank=False
     )
     date = models.DateField(
         _('bill date'),
@@ -139,7 +142,7 @@ class Sale(models.Model):
 class SaleDetail(models.Model):
     sale = models.ForeignKey(
         Sale,
-        on_delete=models.PROTECT,
+        on_delete=models.CASCADE,
         verbose_name=_('sale')
     )
     product = models.ForeignKey(

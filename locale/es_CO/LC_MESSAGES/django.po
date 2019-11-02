@@ -94,7 +94,7 @@ msgid "price cannot be less than or equals zero"
 msgstr "el precio no puede ser menor o igual a cero"
 
 #: .\\.py
-msgid "This field is required"
+msgid "this field is required"
 msgstr "Este campo es requerido"
 
 #: .\\.py
@@ -126,20 +126,20 @@ msgid "inventory"
 msgstr "inventario"
 
 #: .\\.py
-msgid "This list is required"
+msgid "this list is required"
 msgstr "Esta lista es requerida"
 
 #: .\\.py
-msgid ""
-msgstr ""
+msgid "this field is empty"
+msgstr "este campo esta vacio"
 
 #: .\\.py
-msgid ""
-msgstr ""
+msgid "product not inventory in this store"
+msgstr "producto sin inventario en esta tienda"
 
 #: .\\.py
-msgid ""
-msgstr ""
+msgid "store not exist"
+msgstr "la tienda no existe"
 
 #: .\\.py
 msgid ""
